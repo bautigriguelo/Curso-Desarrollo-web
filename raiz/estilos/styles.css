@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.h1{
+    color: white;
+    display: flex;
+}
+
+
+.header{
+    color: white;
+    background-color: white;
+    padding: 1rem;
+    justify-content: center;
+
+}
+.logo{
+    display: flex;
+    width: 11rem;
+    justify-content: space-between;
+}
+.hero__slogan{
+    padding: 1rem;
+}
+.header__descrip{
+display: flex;
+display: grid;
+justify-content: center;
+color: white;
+}
+p{
+    font-weight: 400;
+}
+
+.header__nav{
+    background-color: black;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+.header__list{
+    display: flex;
+    right: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.header__item{
+    display: flex;
+    margin: 10px 20px;
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.hero{
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    margin-left: 4px;
+}
+.negocio{
+    padding: 50px 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.mate{
+    width: 300px;
+    margin-left: 4px;
+    display: flex;
+    justify-content: center;
+}
+.bombilla{
+    width: 300px;
+    padding-left: 4px;
+    display: flex;
+    justify-content: center;
+}
+.termo{
+    width: 300px;
+    margin-left: 4px;
+    display: flex;
+    justify-content: center;
+}
+.matera{
+    width: 300px;
+    padding-left: 4px;
+    display: flex;
+    justify-content: center;
+}
+.cartasgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 50px 30px;
+}
+
+@media screen and (max-width 320px){
+    .hero{
+        display: none;
+    }
+
+}
+@media screen and (max-width 520px) {
+    .negocio{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 768px;){
+    .slogan{
+        color: tomato;
+        @media screen and (max-width: 768px){
+            .hero{
+                background-image: url(../assets/bombilla.jpeg);
+                background-position: center;
+                background-size: cover;
+
+    }
+
+}
+    
+
+ 
