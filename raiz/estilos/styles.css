@@ -1,133 +1,265 @@
 
 *{
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-.h1{
-    color: white;
-    display: flex;
-}
-
-
-.header{
-    color: white;
-    background-color: white;
-    padding: 1rem;
-    justify-content: center;
-
-}
-.logo{
-    display: flex;
-    width: 11rem;
-    justify-content: space-between;
-}
-.hero__slogan{
-    padding: 1rem;
-}
-.header__descrip{
-display: flex;
-display: grid;
-justify-content: center;
-color: white;
-}
-p{
-    font-weight: 400;
-}
-
-.header__nav{
-    background-color: black;
-    padding: 40px 50px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    flex-wrap: wrap;
-
-}
-.header__list{
-    display: flex;
-    right: 10px;
-    list-style: none;
-    flex-wrap: wrap;
-}
-.header__item{
-    display: flex;
-    margin: 10px 20px;
+    
 }
 body{
-    display: grid;
-    height: 100vh;
-    grid-template-rows: auto 1fr auto;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
-.hero{
+header h1 img{
+    margin-top: 2rem;
+    font-size: 2.75rem;
+
+    
+}
+.header-productos nav ul li{
+    list-style: none;
+    display: inline-block;
     background-color: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0px 8px 0px 8px
+
+}
+.header-productos nav ul li a{
+    text-decoration: none;
     color: white;
-    padding: 5px 5px;
-    margin-left: 4px;
 }
-.negocio{
-    padding: 50px 30px;
+
+.header-descrip{
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
-.mate{
-    width: 300px;
-    margin-left: 4px;
+
+.section{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+.img-main{
+    height: auto;
+    width: 50%;
+    margin: 2rem 0 2rem 0;
+} 
 .bombilla{
-    width: 300px;
-    padding-left: 4px;
-    display: flex;
-    justify-content: center;
-}
-.termo{
-    width: 300px;
-    margin-left: 4px;
-    display: flex;
-    justify-content: center;
+    height: auto;
+    width: 50%;
+    margin: 2rem 0 2rem 0;
 }
 .matera{
-    width: 300px;
-    padding-left: 4px;
+    height: auto;
+    width: 50%;
+    margin: 2rem 0 2rem 0;
+}
+.img-main{
+    transition: all 0.2s ease-in-out;
+
+}
+.img-main:hover{
+    transform: scale(0.8);
+}
+.footer-home div{
+    display: flex;
+    justify-content: center;
+
+}
+.bombilla{
+    transition: all 0.2s ease-in-out;
+
+}
+.bombilla:hover{
+    transform: scale(0.8);
+}
+.matera{
+    transition: all 0.2s ease-in-out;
+
+}
+.matera:hover{
+    transform: scale(0.8);
+}
+.footer-home p{
     display: flex;
     justify-content: center;
 }
-.cartasgrid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 50px 30px;
+.footer-home img{
+    margin: 10px 7px 15px 7px;
 }
-
-@media screen and (max-width 320px){
-    .hero{
-        display: none;
-    }
+.insta{
+    width: 1rem;
 
 }
-@media screen and (max-width 520px) {
-    .negocio{
+@media screen and (max-width:768px){
+    .header-flex{
+        display: flex;
         flex-direction: column;
     }
-
-}
-
-@media screen and (max-width: 768px;){
-    .slogan{
-        color: tomato;
-        @media screen and (max-width: 768px){
-            .hero{
-                background-image: url(../assets/bombilla.jpeg);
-                background-position: center;
-                background-size: cover;
-
-    }
-
 }
     
 
+
+/* Pagina productos */
+
+
+.header-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.header-productos nav ul li{
+    list-style: none;
+    display: inline-block;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0px 8px 0px 8px;
+    transition: all 0.2s ease-in-out;
  
+}
+
+.header-productos nav ul li:hover{
+    box-shadow: 1px 1px rgb(16, 15, 15), 2px 2px rgb(16, 15, 15), 3px 3px rgb(16, 15, 15);
+    transform: translateX(-3px);
+}
+.header-productos nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.productos{
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-areas: "img0 img1 img2 img3 img4";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.img-0{
+    width: 15rem;
+}
+.img-1{
+    width: 15rem;
+}
+.img-2{
+    width: 15rem;
+}
+.img-3{
+    width: 15rem;
+}
+.img-4{
+    width: 15rem;
+    padding: 1rem;
+}
+.producto{
+    transition: all 0.2s ease-in-out;
+
+}
+.producto:hover{
+    transform: scale(0.8);
+}
+
+.footer-productos{
+    display: flex;
+    justify-content: center;
+    
+}
+.footer-home{
+    padding: 5rem;
+}
+.footer-productos img{
+    margin: 10px 7px 15px 7px;
+   
+}
+
+
+@media screen and (max-width:768px){
+    .header-productos{
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+    
+    .main-productos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "img0" 
+        "img1" 
+        "img2" 
+        "img3" 
+        "img4";
+        
+    }
+    .header-productos nav ul li{
+
+        margin: 0px 5px 0px 5px
+    }
+    .producto{
+        margin-top: 2rem;
+    }
+
+    .footer-productos div{
+        display: flex;
+        justify-content: center;
+        margin: 3rem;
+    }
+    .footer-productos p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .header-descrip{
+        margin: 1rem;
+    }
+    .header-productos nav ul li{
+
+        font-size: 0.6rem;
+        margin: 0px 1px 0px 1px;
+    }
+    .productos{
+        padding: 2rem;
+        
+    }
+    .footer-home p{
+        font-size: 0.8rem;
+    }
+    .parrafo{
+        display: contents;
+        align-items: center;
+        
+    }
+    .como-comprar{
+        display: contents;
+    }
+
+    
+}
+/* nosotros */
+
+.parrafo{
+    padding: 2rem;
+    margin: 0 15rem 0 15rem ;
+}
+
+/* como comprar */
+
+.como-comprar{
+    margin: 0 5rem 0 5rem;
+}
+
+/* contacto */
+.encuesta{
+    padding: 100%;
+}
+
