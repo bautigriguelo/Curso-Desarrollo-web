@@ -138,7 +138,7 @@ header h1 img{
 
 .main-productos{
     display: grid;
-    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-columns: repeat(5, 0.5fr);
     grid-template-areas: "img0 img1 img2 img3 img4";
     justify-content: center;
     align-items: center;
@@ -159,7 +159,6 @@ header h1 img{
 }
 .img-4{
     width: 15rem;
-    padding: 0,5rem;
 }
 .producto{
     transition: all 0.2s ease-in-out;
